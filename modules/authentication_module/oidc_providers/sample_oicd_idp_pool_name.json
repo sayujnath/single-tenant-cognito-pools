@@ -1,0 +1,34 @@
+{
+    "pool_attributes"  :  {
+        "partner_name"              :   "partner",
+        "provider_type"             :   "OIDC",
+        "public_hostzone"           :   "Z0XXXXXXXXXXXXXMDZ",
+        "private_hostzone"          :   "Z0XXXXXXXXXXXXXX1X0FA",
+        "domain"                    :   "example.com",
+        "subdomain"                 :   "partner",
+        "auth_domain"               :   "auth.example.com"
+    },
+
+    "identity_providers" : [
+        {
+            "provider_type"              :   "SAML",
+            "name"                      :   "employer",
+            "client_id"                 :   "Z1qvGXXXXXXXXXXXXXXXXXXXXXXsEeQ66",
+            "client_secret"             :   "-9VKgXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX3lOFu",
+            "attributes_request_method" :   "POST",
+            "company_id"                :   "mock3",   
+            "issuer_url"                :   "example-issuer-url.au.auth0.com",
+            "allowed_oauth_flows"        :  ["code"],
+            "generate_secret"           :  false,
+            "allowed_oauth_flows_user_pool_client" : true,
+            "explicit_auth_flows"       : ["ALLOW_USER_SRP_AUTH", "ALLOW_CUSTOM_AUTH", "ALLOW_REFRESH_TOKEN_AUTH"],
+            "allowed_oauth_scopes"      : ["phone", "email", "openid", "profile", "aws.cognito.signin.user.admin"],
+            "attribute_mapping"         : {
+                "given_name" : "profile.given_name",
+                "family_name" : "profile.family_name",
+                "name" : "openid",
+                "profile" : "email"
+              }
+        }
+    ]
+}
