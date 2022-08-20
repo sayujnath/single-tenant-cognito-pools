@@ -1,6 +1,6 @@
 ## Objective
-Automated creation of Cognito User Pools which authorize the use of services. Each pool uses and external Idntity provider (IdP) for authentication. Each IdP can either be SAML or OICD compliant.\
-The following diagram shows the entire flow between application service with Cognito Authoirization server and third party IdP.\
+Automated creation of Cognito User Pools which authorize the use of services. Each pool uses and external Idntity provider (IdP) for authentication. Each IdP can either be SAML or OICD compliant.
+The following diagram shows the entire flow between application service with Cognito Authoirization server and third party IdP.  
 
 ![alt text](cognito-auth-flow.jpg)
 
