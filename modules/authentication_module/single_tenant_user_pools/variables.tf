@@ -55,7 +55,7 @@ variable  "zone_id_app_internal" {
 
 variable  "zone_id_example_external" {
     type = string
-    description = "This is the zone ID of casdh domian in the public DNS for development purposes of application service"
+    description = "This is the zone ID of app domian in the public DNS for development purposes of application service"
 }
 
 
