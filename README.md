@@ -13,8 +13,7 @@ The following diagram shows the entire flow between application service with Cog
 
 ## Installation
 
-1. Create a state.tf file in the `setup` directory with AWS provider & AWS profile with admin access. 
-Also recommended to store Terraform backend state and lock file in pre-configured S3 bucket and DynamoDB table.
+1. Update `setup/state.tf` file with an AWS cli profile with admin access, Terraform backend state and lock file in pre-configured S3 bucket and DynamoDB table.
 2. Deploy using Terraform and AWS provider
 ```
 cd setup
