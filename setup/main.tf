@@ -3,6 +3,7 @@
 #   Title:          CIS Hardened Ubuntu AMI with Node.js
 #   Author:         Sayuj Nath, Cloud Solutions Architect
 #   Company:        Canditude
+#   Prepared for    Public non-commercial use
 #   Description:   This file does the following:
 #                   1. Creates many AWS Cognito userpools where 
 #                   2. Each user pool authenticated by an external SAML or OICD IdP providor 
